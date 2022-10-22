@@ -1,0 +1,15 @@
+### get complete machine state
+POST http://127.0.0.1:5000/get
+Content-Type: application/json
+
+{
+    "get": [""]
+}
+
+### get some machine state
+POST http://127.0.0.1:5000/get
+Content-Type: application/json
+
+{
+    "get": ["cpu.used", "memory.free"]
+}
